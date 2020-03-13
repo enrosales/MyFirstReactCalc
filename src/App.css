@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -14,7 +15,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+ /* background-color: #282c34;*/
+ /* Aplicando un gradiente*/
+  background: #5C258D; /* Fallback for old browsers*/
+  background: -webkit-linear-gradient(to right, #4389A2, #5C258D); /*Chrome 10-25, Safari 5.1-6*/
+  background:  linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*Terminacion del gradiente vaidado para diferentes navegadores*/
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;

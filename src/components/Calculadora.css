@@ -1,0 +1,62 @@
+.contenedor {
+    border-radius: 20px;
+}
+
+.padre{
+    border: 10px solid;
+    border-color:black;
+    margin-top: 15px;
+    width: 310px;
+    height: 410px;
+    margin-left: 34%;
+    text-align: center;
+}
+
+.h3{
+    text-align: center;
+    line-height: 2%;
+}
+
+.operaciones {
+    text-align: right;
+}
+
+.resultado {
+    font-size: x-large;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.botones{
+
+}
+.fila-botones {
+}
+
+.btn-negro {
+    background: black;
+    width: 25%;
+    height: 60px;
+    border: 0.5px solid;
+    border-color: gray;
+    color: white;
+    float: left;
+}
+.btn-violeta {
+    background: violet;
+    width: 25%;
+    height: 60px;
+    border: 1px solid;
+    border-color: gray;
+    color: white;
+    float: left;
+}
+.btn-amarillo {
+    background: yellow;
+    width: 25%;
+    height: 60px;
+    border: 1px solid;
+    border-color: gray;
+    color: white;
+    float: left;
+}
