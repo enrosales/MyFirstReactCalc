@@ -1,14 +1,12 @@
-import React from 'react';
-import './App.css';
-
-import Container from './components/Container';
+import React from "react";
+import Calculadora from "./components/calculadora";
 
 function App() {
   return (
     <div className="App">
-      <Container />
+      <Calculadora /> 
     </div>
-  );
+  )
 }
 
 export default App;

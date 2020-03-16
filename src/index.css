@@ -1,13 +1,122 @@
-body {
+/*CSS reset*/
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: inherit;
+}
+
+/*Variables de colores*/
+:root {
+  --color-pantalla: rgb(250,250,250);
+  --dark-buttons: rgb(30,35,38);
+  --calc-buttons: rgb(94,75,182);
+  --yellow-button: rgb(254,194,8);
+}
+
+.App {
+ height: 100vh;
+ width: 100%;
+ background: linear-gradient(#fff, #333);
+ background-size: cover;
+ 
+ /*Flex to center items*/
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.contenedor {
+  height: 82vh;
+  width: 28%;
+  background-color: black;
+  display: flex;
+}
+
+
+.calculadora {
+  height: 80vh;
+  width: 25%;
+  background-color: #222;
+  /* box-shadow: 2em 2em 2em rgba(0,0,0,.5); */
+  align-self: center;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.pantalla {
+  height: 25vh;
+  width: 100%;
+  padding: 0 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(black);
+  background-color: var(--color-pantalla);
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+}
+
+.pantalla-operaciones {
+  height: 6vh;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pantalla-resultados {
+  height: 19vh;
+  font-size: 4.5rem;
+  font-weight: 50;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.teclado {
+  height: 55vh;
+  width: 100%;
+}
+
+.fila-botones {
+  height: 11vh; /*80vh -25vh de pantalla / 5 filas = 11vh*/
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+.btn {
+  width: 25%;
+  height: 100%;
+  font-size: 2rem;
+  font-family: inherit;
+  background-color: var(--dark-buttons);
+  color: white;
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-operador {
+  background-color: var(--calc-buttons);
+}
+
+.btn-resultado {
+  background-color: var(--yellow-button);
 }
