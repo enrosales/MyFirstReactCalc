@@ -32,11 +32,12 @@ onButtonPress = event => {
           ecuacion += `  ${'*'} `;
         else
           ecuacion += ` ${pressedButton} `;
-      }        
+      }
         else if(pressedButton === '='){
           try{
-            const evaluaresult = eval(ecuacion);
-            const result = Number.isInteger(evaluaresult) ? evaluaresult : evaluaresult.toFixed(2);
+            /* eval function is not safe, but for internet reasons i do not use other string library*/
+            const tryToEval = eval(ecuacion);
+            const result = Number.isInteger(tryToEval) ? tryToEval : tryToEval.toFixed(4);
             this.setState({
               resultado: result
             })
